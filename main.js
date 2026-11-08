@@ -539,8 +539,8 @@
     button.addEventListener('click', () => {
       if (!eventDialog) return;
       if (eventImage) {
-        eventImage.src = button.dataset.image || 'assets/sports.svg';
-        eventImage.alt = `Illustrative artwork for ${button.dataset.title || 'school event'}`;
+        eventImage.src = button.dataset.image || 'assets/photos/sports-day.webp';
+        eventImage.alt = `Photo from ${button.dataset.title || 'school event'}`;
       }
       if (eventTitle) eventTitle.textContent = button.dataset.title || 'School event';
       if (eventMeta) eventMeta.textContent = button.dataset.meta || 'School life';
